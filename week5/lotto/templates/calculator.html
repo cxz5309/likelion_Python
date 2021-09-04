@@ -1,0 +1,17 @@
+<!DOCTYPEhtml>
+  <htmllang="ko">
+
+    <head>
+      <title>장고계산기</title>
+    </head>
+
+    <body>
+      <h1>장고계산기</h1>
+      <form action="."method="get">
+        <label for="id_formula">계산할식:</label>
+        <input id="id_formula"type="text"name="formula">
+        <button type="submit">계산하기</button>
+      </form>{% if result %}
+        <p>결과값:{{result}}</p>{% endif %}
+    </body>
+</html>
